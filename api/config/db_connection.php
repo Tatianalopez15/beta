@@ -40,10 +40,10 @@ $conn = pg_connect($data_connection);
 //da permisos 
 //solo para los programadores 
 if (!$conn) {
-    die("cagaste mano ". pg_last_error());
+    die("no funciona ". pg_last_error());
 } else {
 
-    echo "conectado mano";
+    echo "conectado";
  
 }
 
