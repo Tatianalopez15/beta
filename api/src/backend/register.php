@@ -1,6 +1,6 @@
 <?php
     include("../../config/db_connection.php");
-    $fullname = $_POST['fname'];
+    $name = $_POST['name'];
     $email = $_POST['email'];
     $password = $_POST['password'];
     $enc_pass = md5($password);
@@ -14,8 +14,8 @@
         header("refresh:0;url=../register_form.html");
     } else { 
         $sql = "
-        INSERT INTO users (fullname, email, password)
-        VALUES ('$fullname', '$email', '$enc_pass')";
+        INSERT INTO users (name, email, password)
+        VALUES ('$name', '$email', '$enc_pass')";
         $ans = pg_query($conn, $sql);
         if ($ans) {
             echo "<script>alert('User has been registered')</script>";
