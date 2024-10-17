@@ -19,10 +19,10 @@ echo $number3;
 
 
 $host = "localhost";
-$port = "5433";//127.0.0.1;localhost
+$port = "5432";//127.0.0.1;localhost
 $username = "postgres";
 $dbname = "beta";//credenciales 
-$password = "simon1508.";
+$password = "unicesmag";
 //nombre base datos
 
 
