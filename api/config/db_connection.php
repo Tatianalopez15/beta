@@ -14,7 +14,7 @@ echo $number3;
 
 
 //database conetion 
-//developer juan chaucanez  
+//developer tatiana lopez
 //data quemada
 
 
@@ -49,7 +49,7 @@ if (!$conn) {
 
 
 
-pg_close($conn);
+//pg_close($conn);
 
 
 ?>
